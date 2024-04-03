@@ -711,7 +711,7 @@ dashboardProviders:
 dashboards:
   default:
     kuberhealthy:
-      url: https://raw.githubusercontent.com/kuberhealthy/kuberhealthy/master/deploy/grafana/dashboard.json
+      url: https://raw.githubusercontent.com/edsoncelio/kuberhealthy-grafana-demo/main/grafana/dashboards/kuberhealthy.json
   #   prometheus-stats:
   #     gnetId: 2
   #     revision: 2

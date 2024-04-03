@@ -27,8 +27,7 @@ helm upgrade --install prometheus --create-namespace -f prometheus/values.yaml p
 To check if prometheus is working and is getting the kuberhealthy metrics, make a port-forward:   
 `kubectl port-forward svc/prometheus-server 8000:80 -n prometheus`   
 
-If everything is working, you access at `http://localhost:8000/targets?search=kuberhealthy` and will see the
-kuberhealthy endpoint.
+If everything is working, you will see the target in `http://localhost:8000/targets?search=kuberhealthy`.
 
 4. Install Grafana
 ```bash
