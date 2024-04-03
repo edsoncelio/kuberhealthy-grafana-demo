@@ -5,7 +5,7 @@ Configs to setup kuberhealthy with Grafana and Prometheus.
 * docker
 * kind (or other tool to run k8s locally)
 
-## How to use
+## How to Install
 1. Add the helm repos
 ```bash
 helm repo add kuberhealthy https://kuberhealthy.github.io/kuberhealthy/helm-repos
@@ -18,6 +18,8 @@ helm repo update
 ```bash
 helm upgrade --install kuberhealthy --create-namespace -f kuberhealthy/values.yaml kuberhealthy/kuberhealthy -n kuberhealthy
 ``` 
+
+By default there are only one check enabled (deployment check).
 
 3. Install Prometheus
 ```bash
@@ -34,11 +36,14 @@ If everything is working, you will see the target in `http://localhost:8000/targ
 helm upgrade --install grafana --create-namespace -f grafana/values.yaml grafana/grafana -n grafana
 ``` 
 
-To acess the Grafana instance:
+## Accessing the Grafana Instance 
+To access the Grafana instance:
 ```bash
 kubectl port-forward svc/grafana 3000:80 -n grafana
 ```
+
 The user is `admin` and the password is `$ecret`.
 You can see the kuberhealthy dashboard at http://localhost:3000/d/kuberhealthy/kuberhealthy. 
+
 
 
