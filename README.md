@@ -2,8 +2,9 @@
 Configs to setup kuberhealthy with Grafana and Prometheus.
 
 ## Prerequisites
-* docker
-* kind (or other tool to run k8s locally)
+* Docker
+* kind (or other tool to run k8s locally e.g. K3s)
+* Helm (version 3.xx or higher)
 
 ## How to Install
 1. Add the helm repos
