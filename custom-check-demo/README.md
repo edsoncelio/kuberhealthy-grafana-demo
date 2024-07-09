@@ -1,3 +1,3 @@
-## custom-check-demo
+# custom-check-demo
 
-This custom check receive an grafana instance URL and do a simple ping check expecting the http code 200
+This custom check receives a Grafana instance URL and does a simple ping check expecting the HTTP code 200
