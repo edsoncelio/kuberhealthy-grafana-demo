@@ -23,13 +23,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
-      - name: check dir
-        run: ls -la
-      # -
-      #   name: Build and push
-      #   uses: docker/build-push-action@v6
-      #   with:
-      #     context: custom-check-demo/
-      #     push: true
-      #     tags: tuxpilgrim/kuberhealthy-custom-check-image:latest
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: custom-check-demo/
+          push: true
+          tags: tuxpilgrim/kuberhealthy-custom-check-image:latest
