@@ -3,7 +3,7 @@ name: Custom Check Workflow
 on:
   push:
     branches:
-      - feat/add_gh_workflow
+      - main
       
 jobs:
   docker:
