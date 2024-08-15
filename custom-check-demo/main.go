@@ -29,7 +29,7 @@ func main() {
 		}
 		checkclient.ReportSuccess()
 	} else {
-		log.Fatalln("Failed to parse GRAFANA_INTERNAL_URL env var")
+		log.Fatalln("Failed to parse GRAFANA_URL env var")
 	}
 
 	log.Println("Check finished!")
